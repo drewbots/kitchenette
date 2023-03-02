@@ -1,0 +1,71 @@
+/* Custom Kitchinette Rules */
+
+/* Base Customize */
+.page-width {
+  max-width: 100%;
+}
+
+/* Footer Customize */
+.footer__blocks-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.footer-block__details-content {
+  display: flex;
+}
+
+.footer-block__image-wrapper {
+  margin-bottom: 0;
+}
+
+@media screen and (min-width: 750px) {
+  .footer-block__details-content>:first-child .list-menu__item--link {
+      padding-top: 0.5rem !important;
+  }
+}
+
+.footer__content-bottom-wrapper {
+  justify-content: center;
+}
+
+.footer-block--newsletter {
+  margin-top: 0 !important;
+}
+
+.footer-block__heading {
+  margin: 0 auto;
+}
+
+@media screen and (min-width: 990px) {
+  .footer-block__heading {
+    font-size: calc(var(--font-heading-scale) * 3rem) !important;
+    max-width: 680px;
+  }
+}
+
+/* Password Page Customize */
+#shopify-section-main-password-footer .password__footer {
+  display: none;
+}
+
+#Banner-template--18009187254549__main .email-signup-banner__box {
+  max-width: 800px;
+}
+
+#shopify-section-main-password-header .password-modal {
+  display: none !important;
+}
+
+@media screen and (max-width: 749px) {
+  #shopify-section-template--18009187254549__main .email-signup-banner:not(.banner--mobile-bottom) .banner__box:not(.email-signup-banner__box--no-image) {
+    background-color: transparent;
+    --color-foreground: 0, 0, 255;
+    --color-button: 0, 0, 255;
+    --color-button-text: 0, 0, 0;
+  }
+  #shopify-section-template--18009187254549__main .banner__media img {
+    display: none !important;
+  }
+}
