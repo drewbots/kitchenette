@@ -32,6 +32,7 @@
     <script src="{{ 'constants.js' | asset_url }}" defer="defer"></script>
     <script src="{{ 'pubsub.js' | asset_url }}" defer="defer"></script>
     <script src="{{ 'global.js' | asset_url }}" defer="defer"></script>
+    
     {{ content_for_header }}
 
     {%- liquid
@@ -191,6 +192,25 @@
         box-sizing: inherit;
       }
 
+      {% if template == 'index' %}
+      .header {
+        background: white;
+      }
+      .section-header.shopify-section-group-header-group {
+        height: 0;
+      }
+      
+      #myID {
+        transition: all .5s;
+      }
+      .menuhide {
+        opacity: 0;
+        visibility: hidden;
+      }
+      .menushow {
+        opacity:1;
+      }
+      {% endif %}
       html {
         box-sizing: border-box;
         font-size: calc(var(--font-body-scale) * 62.5%);
@@ -218,7 +238,9 @@
       }
     {% endstyle %}
 
+    {{ 'custom.css' | asset_url | stylesheet_tag }}
     {{ 'base.css' | asset_url | stylesheet_tag }}
+    {{ 'kitchenette.css' | asset_url | stylesheet_tag }}
 
     {%- unless settings.type_body_font.system? -%}
       <link rel="preload" as="font" href="{{ settings.type_body_font | font_url }}" type="font/woff2" crossorigin>
@@ -289,7 +311,20 @@
         playSlideshow: `{{ 'sections.slideshow.play_slideshow' | t }}`,
       }
     </script>
+    <script>
+      myID = document.getElementById("myID");
 
+      var myScrollFunc = function () {
+          var y = window.scrollY;
+          if (y >= 200) {
+              myID.className = "menushow header-wrapper color-{{ section.settings.color_scheme }} gradient{% if section.settings.show_line_separator %} header-wrapper--border-bottom{% endif %}"
+          } else {
+              myID.className = "menuhide header-wrapper color-{{ section.settings.color_scheme }} gradient{% if section.settings.show_line_separator %} header-wrapper--border-bottom{% endif %}"
+          }
+      };
+      
+      window.addEventListener("scroll", myScrollFunc);
+    </script>
     {%- if settings.predictive_search_enabled -%}
       <script src="{{ 'predictive-search.js' | asset_url }}" defer="defer"></script>
     {%- endif -%}
