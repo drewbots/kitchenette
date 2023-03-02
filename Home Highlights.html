@@ -1,0 +1,69 @@
+{%- style -%}
+  .home-highlights hr {
+    margin: 0;
+    background-color: rgba(var(--color-foreground),1);
+  }
+  .home-highlights-image img {
+    width: 100%;
+    height: auto;
+    padding-top: 5rem;
+  }
+  @media screen and (min-width: 750px) {
+    .home-highlights-image img {
+
+    }
+  }
+{%- endstyle -%}
+
+<div class="home-highlights page-width">
+  <div style="display: flex;">
+    <div style="display:flex; align-items: center; flex-grow: 2; flex-basis: 0;">
+      <div style="width: 100%; padding-right: 5rem;">
+        <p>Farm to Freezer to Table</p>
+        <hr>
+        <h2>Expertly sourced ingredients</h2>
+        <hr>
+        <h2>Fuss free meals</h2>
+        <hr>
+        <h2>Carefully frozen</h2> 
+        <hr>
+        <h2><a href="/our-story" class="button button--primary">Explore the menu</a></h2>
+      </div>
+    </div>
+    <div class="home-highlights-image" style="flex-grow: 2; flex-basis: 0;">
+      {%- if section.settings.image != blank -%}
+        {{
+          section.settings.image
+          | image_url: width: 1500
+          | image_tag: loading: 'lazy', sizes: sizes, widths: '165, 360, 535, 750, 1070, 1500'
+        }}
+      {%- else -%}
+        {{ 'image' | placeholder_svg_tag: 'placeholder-svg' }}
+      {%- endif -%}
+    </div>
+  </div>
+</div>
+
+
+{% schema %}
+{
+  "name": "Home Highlights",
+  "class": "section",
+  "disabled_on": {
+    "groups": ["header", "footer"]
+  },
+  "settings": [
+    {
+      "type": "image_picker",
+      "id": "image",
+      "label": "Image"
+    }
+  ],
+  "blocks": [],
+  "presets": [
+    {
+      "name": "Homepage Highlights"
+    }
+  ]
+}
+{% endschema %}
