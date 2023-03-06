@@ -1,8 +1,61 @@
 /* Custom Kitchinette Rules */
 
 /* Base Customize */
-.page-width {
+.header-wrapper--border-bottom {
+  border-bottom: none;
+}
+
+/* Product Page */
+#Quantity-Form-template--18009188139285__main .quantity__label {
+  display: none;
+}
+
+#Quantity-Form-template--18009188139285__main {
+  float: left;
+}
+
+.wrap-buy-button {
+  float: left;
+}
+
+/* Home Page Our Menu */
+#shopify-section-template--18009188237589__featured_collection .page-width {
+  max-width: 100%; 
+}
+
+/* How-to */
+#shopify-section-template--18009188237589__c59ca46f-5dcf-4798-890a-cb2012fb07a6 .page-width {
   max-width: 100%;
+}
+
+#shopify-section-template--18009188237589__c59ca46f-5dcf-4798-890a-cb2012fb07a6 img {
+  max-width: 100%;
+  height: auto;
+  width: 80px;
+  position: relative;
+}
+
+#shopify-section-template--18009188237589__c59ca46f-5dcf-4798-890a-cb2012fb07a6 .media {
+  padding-bottom: 0 !important;
+}
+
+#shopify-section-template--18009188237589__c59ca46f-5dcf-4798-890a-cb2012fb07a6 .center {
+  text-align: left !important;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+}
+
+#shopify-section-template--18009188237589__c59ca46f-5dcf-4798-890a-cb2012fb07a6 .multicolumn-card {
+  display: flex;
+}
+
+
+#shopify-section-template--18009188237589__c59ca46f-5dcf-4798-890a-cb2012fb07a6 .multicolumn-card__image-wrapper {
+  margin-left: 0 !important;
+}
+
+#shopify-section-template--18009188237589__c59ca46f-5dcf-4798-890a-cb2012fb07a6 .multicolumn-card__info {
+  width: 100%;
 }
 
 /* Footer Customize */
@@ -45,6 +98,34 @@
   }
 }
 
+/* Our Story Page */
+
+#Banner-template--18009188401429__35dddd9f-4fb9-4bcf-a1f2-23ac34ec9775 .banner__box {
+  background: none;
+} 
+
+#Banner-template--18009188401429__35dddd9f-4fb9-4bcf-a1f2-23ac34ec9775 .banner__media {
+  width: 94%;
+  margin: 0 3%;
+}
+
+#shopify-section-template--18009188401429__5e0fa753-6400-4e36-9099-3a7b9183c274 .rich-text__blocks {
+  text-align: left !important;
+}
+
+#shopify-section-template--18009188401429__5e0fa753-6400-4e36-9099-3a7b9183c274 .rich-text__buttons {
+  justify-content: flex-start;
+}
+
+#shopify-section-template--18009188401429__5e0fa753-6400-4e36-9099-3a7b9183c274 {
+  width: 50%;
+  float:right;
+}
+
+#shopify-section-template--18009188401429__816e9046-59b0-45d4-b7b5-dcdbcea38c02 {
+  width: 50%;
+}
+
 /* Password Page Customize */
 #shopify-section-main-password-footer .password__footer {
   display: none;
@@ -69,3 +150,4 @@
     display: none !important;
   }
 }
+

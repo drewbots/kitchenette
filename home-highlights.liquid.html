@@ -1,4 +1,7 @@
 {%- style -%}
+  #shopify-section-template--18009188237589__4b81a13c-9b24-43d8-81d0-89dae57bc110 .page-width {
+    max-width: 100%;
+  }
   .home-highlights hr {
     margin: 0;
     background-color: rgba(var(--color-foreground),1);
@@ -8,16 +11,23 @@
     height: auto;
     padding-top: 5rem;
   }
+  .home-response {
+    display:flex; 
+    flex-direction: column;
+  }
   @media screen and (min-width: 750px) {
     .home-highlights-image img {
-
+      
+    }
+    .home-response {
+      flex-direction: row;
     }
   }
 {%- endstyle -%}
 
 <div class="home-highlights page-width">
-  <div style="display: flex;">
-    <div style="display:flex; align-items: center; flex-grow: 2; flex-basis: 0;">
+  <div class="home-response">
+    <div style="align-items: center; flex-grow: 2; flex-basis: 0;">
       <div style="width: 100%; padding-right: 5rem;">
         <p>Farm to Freezer to Table</p>
         <hr>
