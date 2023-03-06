@@ -26,6 +26,10 @@
   margin: 0;
 }
 
+#ProductInfo-template--18009188139285__main .product__text {
+  display: none;
+}
+
 .checkout-wrapper {
   display: flex;
 }
