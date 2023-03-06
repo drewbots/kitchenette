@@ -11,11 +11,36 @@
 }
 
 #Quantity-Form-template--18009188139285__main {
-  float: left;
+    flex: 0 0 36%;
+    max-width: none;
+    min-width: auto;
+    margin-right: 4%;
+    margin-bottom: 0;
+}
+
+#Quantity-Form-template--18009188139285__main .quantity {
+  width: 100%;
+}
+
+#ProductInfo-template--18009188139285__main .product__description hr {
+  margin: 0;
+}
+
+.checkout-wrapper {
+  display: flex;
+}
+
+.title-wrapper {
+  display: flex;
 }
 
 .wrap-buy-button {
-  float: left;
+  width: 60%;
+}
+
+#MainProduct-template--18009188139285__main .wrap-buy-button .product-form {
+  margin: 0;
+  width: 100%;
 }
 
 /* Home Page Our Menu */
