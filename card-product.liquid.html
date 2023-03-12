@@ -198,6 +198,7 @@
 
             {% render 'price', product: card_product, price_class: '' %}
           </div>
+          <p>{{ card_product.description | strip_html| truncatewords: 80 }}</p>
         </div>
         {%- if show_quick_add -%}
           <div class="quick-add no-js-hidden">
@@ -375,6 +376,7 @@
             {%- endif -%}
             {% render 'price' %}
           </div>
+          <p>{{ card_product.description | strip_html| truncatewords: 80 }}</p>
         </div>
       </div>
     </div>
