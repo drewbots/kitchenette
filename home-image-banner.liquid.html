@@ -95,6 +95,7 @@
   {%- endif -%}
   <div class="banner__content banner__content--{{ section.settings.desktop_content_position }} page-width">
     <div class="banner__box content-container content-container--full-width-mobile color-{{ section.settings.color_scheme }} gradient">
+      <h3 class="extralinks"><a href="/collections/all" class="link link--text" title="All products">Family Meals</a>, <a href="/#shopify-section-template--18009188237589__c59ca46f-5dcf-4798-890a-cb2012fb07a6" class="link link--text" title="/#shopify-section-template--18009188237589__c59ca46f-5dcf-4798-890a-cb2012fb07a6">How it Works</a>, <a href="/pages/our-story" class="link link--text" title="Our Story">Our Story</a></h3>
       {% if template == 'index' %}
         <div id="picture" style="width: 100%;" /></div>
       {% endif %}
@@ -146,7 +147,7 @@
 
 {% schema %}
 {
-  "name": "t:sections.image-banner.name",
+  "name": "Home Image banner",
   "tag": "section",
   "class": "section",
   "disabled_on": {
@@ -337,13 +338,13 @@
   "blocks": [
     {
       "type": "heading",
-      "name": "t:sections.image-banner.blocks.heading.name",
+      "name": "Home Image banner",
       "limit": 1,
       "settings": [
         {
           "type": "text",
           "id": "heading",
-          "default": "Image banner",
+          "default": "Home Image banner",
           "label": "t:sections.image-banner.blocks.heading.settings.heading.label"
         },
         {
@@ -447,7 +448,7 @@
   ],
   "presets": [
     {
-      "name": "t:sections.image-banner.presets.name",
+      "name": "Home Image banner",
       "blocks": [
         {
           "type": "heading"

@@ -94,24 +94,29 @@
 }
 
 /* Above the Fold Home Page*/
-#Banner-template--18009188237589__image_banner .banner__box {
+
+#picture img {
+  width: 100%;
+}
+
+#Banner-template--18009188237589__4435273e-f778-4995-b73f-7238f76aca66 .banner__box {
   padding-top: 0;
 }
 
-#Banner-template--18009188237589__image_banner .banner__content {
+#Banner-template--18009188237589__4435273e-f778-4995-b73f-7238f76aca66 .banner__content {
   padding-top: 0;
 }
 
-#Banner-template--18009188237589__image_banner .extralinks {
+#Banner-template--18009188237589__4435273e-f778-4995-b73f-7238f76aca66 .extralinks {
   margin-top: 10px;
 }
 
-#Banner-template--18009188237589__image_banner .extralinks .link {
+#Banner-template--18009188237589__4435273e-f778-4995-b73f-7238f76aca66 .extralinks .link {
   font-size: 2rem;
   color: white;
 }
 
-#Banner-template--18009188237589__image_banner .banner__heading {
+#Banner-template--18009188237589__4435273e-f778-4995-b73f-7238f76aca66 .banner__heading {
   max-width: 800px;
 }
 
@@ -147,10 +152,11 @@
 }
 
 #shopify-section-template--18009188237589__featured_collection .collection__title .title:not(:only-child) {
-  font-family: Poppins;
+  font-family: "HafferMedium";
   font-size: 1.5rem;
   text-align: center;
   margin-top: 20px;
+  color: #ff5032;
 }
 
 #shopify-section-template--18009188237589__featured_collection .collection__description {
@@ -237,10 +243,11 @@
 }
 
 #shopify-section-template--18009188237589__c59ca46f-5dcf-4798-890a-cb2012fb07a6 .title-wrapper-with-link h2 {
-  font-family: Poppins;
+  font-family: "HafferMedium";
   font-size: 1.5rem;
   text-align: center;
-  margin: 20px auto 0 auto;
+  margin: 20px auto 0;
+  color: #ff5032;
 }
 
 #shopify-section-template--18009188237589__c59ca46f-5dcf-4798-890a-cb2012fb07a6 img {

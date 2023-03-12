@@ -258,6 +258,7 @@
       document.documentElement.classList.add('shopify-design-mode');
     }
     </script>
+
   </head>
 
   <body class="gradient">
@@ -328,5 +329,23 @@
     {%- if settings.predictive_search_enabled -%}
       <script src="{{ 'predictive-search.js' | asset_url }}" defer="defer"></script>
     {%- endif -%}
+
+    <script id="rendered-js">
+      var images = [
+        'https://cdn.shopify.com/s/files/1/0689/5416/1429/files/red.png?v=1678598364',
+        'https://cdn.shopify.com/s/files/1/0689/5416/1429/files/yellow.png?v=1678598363',
+        'https://cdn.shopify.com/s/files/1/0689/5416/1429/files/blue.png?v=1678598363',
+        'https://cdn.shopify.com/s/files/1/0689/5416/1429/files/white.png?v=1678598363'
+      ];
+
+      function getRandomImage() {
+        let image = document.createElement("img");
+        image.src = images[Math.floor(Math.random() * images.length)];
+        return image;
+      }
+
+      document.getElementById("picture").appendChild(getRandomImage());
+    </script>
+
   </body>
 </html>
