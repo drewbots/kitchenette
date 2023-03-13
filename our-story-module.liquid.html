@@ -6,6 +6,9 @@
     margin: 0;
     background-color: rgba(var(--color-foreground),1);
   }
+  .our-story-image {
+    max-width: 180px;
+  }
   .our-story-image img {
     width: 100%;
     height: auto;
@@ -21,6 +24,12 @@
   .hide-desktop {
     display: block;
   }
+
+  .our-story-mantra {
+    display: flex; 
+    flex-direction: column;
+  } 
+
   @media screen and (min-width: 750px) {
     .home-highlights-image img {
       
@@ -34,6 +43,9 @@
     .hide-desktop {
       display: none;
     }
+    .our-story-mantra {
+      width: 50%;
+    }    
   }
 {%- endstyle -%}
 
@@ -43,7 +55,7 @@
       <div style="width: 100%; padding-right: 5rem;">
         <p>Farm to Freezer to Table</p>
       </div>
-      <div class="our-story-image hide-mobile" style="max-width: 80px;">
+      <div class="our-story-image hide-mobile">
         {%- if section.settings.image != blank -%}
           {{
             section.settings.image
@@ -55,7 +67,7 @@
         {%- endif -%}
       </div>
     </div>
-    <div style="display: flex; flex-direction: column; width: 50%;">
+    <div class="our-story-mantra">
       <h2>Don't compromise on the nights you can't cook dinner. By reducing cooking pressure and increasing food pleasure, we're helping you eat the way you want to make weeknights fuss-free.</h2>
       <div class="our-story-image hide-desktop" style="max-width: 80px;">
         {%- if section.settings.image != blank -%}
@@ -68,7 +80,7 @@
           {{ 'image' | placeholder_svg_tag: 'placeholder-svg' }}
         {%- endif -%}
       </div>
-      <h2>Think of your freezer as a pantry. A well-stocked space that keeps food fresh, nutritious and from spoiling too fast. <br>Your freezer is a magical tool and Kitchenette is the key to unlocking an easier, tastier, healthier and more sustainable way of eating.</h2>
+      <h2>Think of your freezer as a pantry. A well-stocked space that keeps food fresh, nutritious and from spoiling too fast. <br><br>Your freezer is a magical tool and Kitchenette is the key to unlocking an easier, tastier, healthier and more sustainable way of eating.</h2>
     </div>
   </div>
 </div>

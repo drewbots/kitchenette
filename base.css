@@ -243,8 +243,7 @@ html.no-js .no-js-hidden {
   display: none !important;
 }
 
-.page-width {
-  max-width: var(--page-width);
+.page-width {;
   margin: 0 auto;
   padding: 0 1.5rem;
 }
