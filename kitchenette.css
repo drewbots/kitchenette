@@ -301,14 +301,9 @@
   padding-bottom: 0;
 }
 
-#shopify-section-template--18009188237589__featured_collection .collection__title p {
-  font-size: 1.6rem;
-  margin-top: 12px;
-}
-
 /* Product Card on Various Pages */
 
-#shopify-section-template--18009188237589__featured_collection p,
+#shopify-section-template--18009188237589__featured_collection .card__information p,
 #ProductGridContainer p,
 #shopify-section-template--18009188139285__related-products p {
   line-height: 1.38;
