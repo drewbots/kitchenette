@@ -13,14 +13,28 @@
     width: 100%;
     height: auto;
     margin: 5rem 0;
+    display: block;
   }
   .home-response {
     display:flex; 
     flex-direction: column;
   }
+  .home-wrap {
+    display:flex; 
+    align-items: center; 
+    flex-grow: 2; 
+    flex-basis: 0;
+    margin-top: 5rem;
+  }
+  .home-lines {
+    width: 100%;
+  }
   @media screen and (min-width: 750px) {
-    .home-highlights-image img {
-      
+    .home-lines {
+      width: 100%; padding-right: 5rem;
+    }
+    .home-wrap {
+      margin-top: 0rem;
     }
     .home-response {
       flex-direction: row;
@@ -30,9 +44,9 @@
 
 <div class="home-highlights page-width">
   <div class="home-response">
-    <div style="display:flex; align-items: center; flex-grow: 2; flex-basis: 0;">
-      <div style="width: 100%; padding-right: 5rem;">
-        <p style="color: #ff5032; font-family:'HafferMedium';">Farm to Freezer to Table</p>
+    <div class="home-wrap">
+      <div class="home-lines">
+        <p style="font-family:'HafferMedium'; margin-top: 0;">Farm to Freezer to Table</p>
         <hr>
         <h2>Expertly sourced ingredients</h2>
         <hr>
@@ -40,7 +54,7 @@
         <hr>
         <h2>Carefully frozen</h2> 
         <hr>
-        <h2><a href="/our-story" class="button button--primary">Explore the menu</a></h2>
+        <h2 style="margin-bottom:0;"><a href="/our-story" class="button button--primary">Explore the menu</a></h2>
       </div>
     </div>
     <div class="home-highlights-image" style="flex-grow: 2; flex-basis: 0;">
