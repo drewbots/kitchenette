@@ -287,6 +287,8 @@ html {
   width: auto;
 }
 
+/* not i think I did this for multi colored buttons, if they keep multi-colored then work needs to happen here to get hover stake working on each button
+
 #shopify-section-template--18009188237589__featured_collection .button:after,
 #shopify-section-template--18009188073749__product-grid .button:after,
 #shopify-section-template--18009188139285__related-products .button:after {
@@ -297,9 +299,11 @@ html {
 #shopify-section-template--18009188073749__product-grid .button:not([disabled]):hover:after,
 #shopify-section-template--18009188139285__related-products .button:not([disabled]):hover:after {
   box-shadow: none;
-}
+}*/
 
-/*#Slider-template--18009188237589__featured_collection .button {
+/* These are the multicolored buttons, do not delete
+
+#Slider-template--18009188237589__featured_collection .button {
   background-color: rgb(0, 0, 255);
 }*/
 

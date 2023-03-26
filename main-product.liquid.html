@@ -206,7 +206,6 @@
                   </div>
                 </details>
               </div>
-            </div>
             {%- when 'quantity_selector' -%}
             <div class="checkout-wrapper">
               <div
@@ -318,7 +317,7 @@
                 block: block,
                 share_link: share_url
               %}
-
+</div>
             {%- when 'variant_picker' -%}
               {% render 'product-variant-picker', product: product, block: block, product_form_id: product_form_id %}
             {%- when 'buy_buttons' -%}
