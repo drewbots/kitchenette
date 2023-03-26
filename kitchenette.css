@@ -301,6 +301,11 @@
   padding-bottom: 0;
 }
 
+#shopify-section-template--18009188237589__featured_collection .collection__title p {
+  font-size: 1.6rem;
+  margin-top: 12px;
+}
+
 /* Product Card on Various Pages */
 
 #shopify-section-template--18009188237589__featured_collection p,
