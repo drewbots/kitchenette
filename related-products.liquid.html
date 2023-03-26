@@ -6,7 +6,11 @@
   media="print"
   onload="this.media='all'"
 >
-
+{%- if section.settings.enable_quick_add -%}
+  <link rel="stylesheet" href="{{ 'quick-add.css' | asset_url }}" media="print" onload="this.media='all'">
+  <script src="{{ 'quick-add.js' | asset_url }}" defer="defer"></script>
+  <script src="{{ 'product-form.js' | asset_url }}" defer="defer"></script>
+{%- endif -%}
 {%- style -%}
   .section-{{ section.id }}-padding {
     padding-top: {{ section.settings.padding_top | times: 0.75 | round: 0 }}px;
@@ -42,7 +46,7 @@
               show_secondary_image: section.settings.show_secondary_image,
               show_vendor: section.settings.show_vendor,
               show_rating: section.settings.show_rating,
-              show_quick_add: section.settings.show_
+              show_quick_add: section.settings.enable_quick_add
             %}
           </li>
         {% endfor %}
@@ -176,6 +180,12 @@
       "default": false,
       "label": "t:sections.related-products.settings.show_rating.label",
       "info": "t:sections.related-products.settings.show_rating.info"
+    },
+    {
+      "type": "checkbox",
+      "id": "enable_quick_add",
+      "default": false,
+      "label": "t:sections.featured-collection.settings.enable_quick_buy.label"
     },
     {
       "type": "header",
