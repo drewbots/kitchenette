@@ -1,0 +1,98 @@
+<!-- {%- style -%}
+  #shopify-section-template--18009188401429__6e54fcb7-ea30-43f3-b806-e6431d4776cb .page-width {
+    max-width: 100%;
+  }
+  .our-story hr {
+    margin: 0;
+    background-color: rgba(var(--color-foreground),1);
+  }
+  .our-story-image {
+    max-width: 180px;
+  }
+  @media screen and (max-width: 749px) {
+    .our-story-image {
+      max-width: 240px;
+    }
+  }
+  .our-story-image img {
+    width: 100%;
+    height: auto;
+    padding-top: 0rem;
+    display: block;
+  }
+  @media screen and (min-width: 750px) {
+    .our-story-image img {
+      padding-top: 5rem;
+    }
+  }
+  .our-story-response {
+    display:flex; 
+    flex-direction: column;
+    padding-top: 5rem;
+  }
+  .hide-mobile {
+    display:none;
+  }
+  .hide-desktop {
+    display: block;
+  }
+
+  .our-story-mantra {
+    display: flex; 
+    flex-direction: column;
+  } 
+
+  @media screen and (min-width: 750px) {
+    .our-story-response {
+      flex-direction: row;
+    }
+    .hide-mobile {
+      display:block;
+    }
+    .hide-desktop {
+      display: none;
+    }
+    .our-story-mantra {
+      width: 50%;
+    }    
+    .our-story-mantra .nextjead {
+      margin-bottom:0;
+    }
+  }
+{%- endstyle -%} -->
+
+<!-- <div class="our-story page-width">
+  <div class="our-story-response">
+    <div style="display:flex; flex-direction: column; justify-content: space-between; width: 50%;">
+      <div style="width: 100%; padding-right: 5rem;">
+        <p style="font-family:'HafferMedium'; margin-top: 0;">Farm to Freezer to Table</p>
+      </div>
+      <div class="our-story-image hide-mobile">
+        {%- if section.settings.image != blank -%}
+          {{
+            section.settings.image
+            | image_url: width: 1500
+            | image_tag: loading: 'lazy', sizes: sizes, widths: '165, 360, 535, 750, 1070, 1500'
+          }}
+        {%- else -%}
+          {{ 'image' | placeholder_svg_tag: 'placeholder-svg' }}
+        {%- endif -%}
+      </div>
+    </div>
+    <div class="our-story-mantra">
+      <h2 style="margin-top: 0;">Don't compromise on the nights you can't cook dinner. By reducing cooking pressure and increasing food pleasure, we're helping you eat the way you want to make weeknights fuss-free.</h2>
+      <div class="our-story-image hide-desktop">
+        {%- if section.settings.image != blank -%}
+          {{
+            section.settings.image
+            | image_url: width: 1500
+            | image_tag: loading: 'lazy', sizes: sizes, widths: '165, 360, 535, 750, 1070, 1500'
+          }}
+        {%- else -%}
+          {{ 'image' | placeholder_svg_tag: 'placeholder-svg' }}
+        {%- endif -%}
+      </div>
+      <h2 class="nextjead">Your freezer is a magical tool and Kitchenette is the key to unlocking it. Serving tasty, healthy, and more sustainable dinners has never been easier.</h2>
+    </div>
+  </div>
+</div> -->

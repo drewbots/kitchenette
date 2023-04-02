@@ -1,87 +1,64 @@
 {%- style -%}
+  #shopify-section-template--18009188401429__6e54fcb7-ea30-43f3-b806-e6431d4776cb {
+    background-color: white;
+  }
   #shopify-section-template--18009188401429__6e54fcb7-ea30-43f3-b806-e6431d4776cb .page-width {
     max-width: 100%;
   }
-  .our-story hr {
+  #shopify-section-template--18009188401429__6e54fcb7-ea30-43f3-b806-e6431d4776cb .home-lines p {
+    font-family: "HafferMedium";
+    font-size: 1.5rem;
+    text-align: left;
+    color: rgb(0, 0, 255);
+    /*  color: #ff5032;*/
+  }
+  .home-highlights hr {
     margin: 0;
     background-color: rgba(var(--color-foreground),1);
   }
-  .our-story-image {
-    max-width: 180px;
-  }
-  @media screen and (max-width: 749px) {
-    .our-story-image {
-      max-width: 240px;
-    }
-  }
-  .our-story-image img {
+  .home-highlights-image img {
     width: 100%;
     height: auto;
-    padding-top: 0rem;
+    margin: 5rem 0;
     display: block;
   }
-  @media screen and (min-width: 750px) {
-    .our-story-image img {
-      padding-top: 5rem;
-    }
-  }
-  .our-story-response {
+  .home-response {
     display:flex; 
     flex-direction: column;
-    padding-top: 5rem;
   }
-  .hide-mobile {
-    display:none;
+  .home-wrap {
+    display:flex; 
+    align-items: center; 
+    flex-grow: 2; 
+    flex-basis: 0;
+    margin-top: 5rem;
   }
-  .hide-desktop {
-    display: block;
+  .home-lines {
+    width: 100%;
   }
-
-  .our-story-mantra {
-    display: flex; 
-    flex-direction: column;
-  } 
-
   @media screen and (min-width: 750px) {
-    .our-story-response {
+    .home-lines {
+      width: 100%; padding-right: 5rem;
+    }
+    .home-wrap {
+      margin-top: 0rem;
+    }
+    .home-response {
       flex-direction: row;
-    }
-    .hide-mobile {
-      display:block;
-    }
-    .hide-desktop {
-      display: none;
-    }
-    .our-story-mantra {
-      width: 50%;
-    }    
-    .our-story-mantra .nextjead {
-      margin-bottom:0;
     }
   }
 {%- endstyle -%}
 
-<div class="our-story page-width">
-  <div class="our-story-response">
-    <div style="display:flex; flex-direction: column; justify-content: space-between; width: 50%;">
-      <div style="width: 100%; padding-right: 5rem;">
+<div class="home-highlights page-width">
+  <div class="home-response">
+    <div class="home-wrap">
+      <div class="home-lines">
         <p style="font-family:'HafferMedium'; margin-top: 0;">Farm to Freezer to Table</p>
-      </div>
-      <div class="our-story-image hide-mobile">
-        {%- if section.settings.image != blank -%}
-          {{
-            section.settings.image
-            | image_url: width: 1500
-            | image_tag: loading: 'lazy', sizes: sizes, widths: '165, 360, 535, 750, 1070, 1500'
-          }}
-        {%- else -%}
-          {{ 'image' | placeholder_svg_tag: 'placeholder-svg' }}
-        {%- endif -%}
+        <h2>Don't compromise on the nights you can't cook dinner. By reducing cooking pressure and increasing food pleasure, we're helping you eat the way you want to make weeknights fuss-free.<br>Your freezer is a magical tool and Kitchenette is the key to unlocking it. Serving tasty, healthy, and more sustainable dinners has never been easier.
+        </h2>
       </div>
     </div>
-    <div class="our-story-mantra">
-      <h2 style="margin-top: 0;">Don't compromise on the nights you can't cook dinner. By reducing cooking pressure and increasing food pleasure, we're helping you eat the way you want to make weeknights fuss-free.</h2>
-      <div class="our-story-image hide-desktop">
+    <div class="home-highlights-image" style="flex-grow: 2; flex-basis: 0;">
         {%- if section.settings.image != blank -%}
           {{
             section.settings.image
@@ -91,10 +68,9 @@
         {%- else -%}
           {{ 'image' | placeholder_svg_tag: 'placeholder-svg' }}
         {%- endif -%}
-      </div>
-      <h2 class="nextjead">Think of your freezer as a pantry. A well-stocked space that keeps food fresh, nutritious and from spoiling too fast. <br><br>Your freezer is a magical tool and Kitchenette is the key to unlocking an easier, tastier, healthier and more sustainable way of eating.</h2>
     </div>
   </div>
+  <hr>
 </div>
 
 
