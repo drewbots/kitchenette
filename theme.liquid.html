@@ -211,6 +211,8 @@
         opacity:1;
       }
       {% endif %}
+
+
       html {
         box-sizing: border-box;
         font-size: calc(var(--font-body-scale) * 62.5%);
@@ -312,6 +314,8 @@
         playSlideshow: `{{ 'sections.slideshow.play_slideshow' | t }}`,
       }
     </script>
+
+
     <script>
       myID = document.getElementById("myID");
 
@@ -326,6 +330,8 @@
       
       window.addEventListener("scroll", myScrollFunc);
     </script>
+
+
     {%- if settings.predictive_search_enabled -%}
       <script src="{{ 'predictive-search.js' | asset_url }}" defer="defer"></script>
     {%- endif -%}
