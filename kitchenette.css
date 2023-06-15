@@ -264,6 +264,7 @@ h5,
 
 #Banner-template--19349027225877__4435273e-f778-4995-b73f-7238f76aca66 .button {
   color: rgb(0,0,255);
+  background-color: white;
 }
 
 #Banner-template--19349027225877__4435273e-f778-4995-b73f-7238f76aca66 .banner__box {
@@ -285,6 +286,7 @@ h5,
 
 #Banner-template--19349027225877__4435273e-f778-4995-b73f-7238f76aca66 .banner__heading {
   max-width: 800px;
+  color: white;
 }
 
 /* Home Page Section */
@@ -375,9 +377,9 @@ h5,
   margin: 0;
 }
 
-#shopify-section-template--19349027225877__featured_collection .section-template--18009188237589__featured_collection-padding,
-#shopify-section-template--18009188073749__product-grid .section-template--18009188237589__featured_collection-padding,
-#shopify-section-template--18009188139285__related-products .section-template--18009188237589__featured_collection-padding,
+#shopify-section-template--19349027225877__featured_collection .section-template--19349027225877__featured_collection-padding,
+#shopify-section-template--18009188073749__product-grid .section-template--19349027225877__featured_collection-padding,
+#shopify-section-template--18009188139285__related-products .section-template--19349027225877__featured_collection-padding,
 #shopify-section-template--19349027422485__639c7ce2-15ec-48ff-8b00-01422a327a8c .section-template--19349027422485__639c7ce2-15ec-48ff-8b00-01422a327a8c-padding,
 #shopify-section-template--19285229142293__639c7ce2-15ec-48ff-8b00-01422a327a8c .section-template--19285229142293__639c7ce2-15ec-48ff-8b00-01422a327a8c-padding,
 #shopify-section-template--19349027160341__f66c3336-1edc-4bc2-b097-e557e8ef77df .section-template--18009188073749__f66c3336-1edc-4bc2-b097-e557e8ef77df-padding,
@@ -563,13 +565,13 @@ h5,
 
 #Banner-template--19285229142293__35dddd9f-4fb9-4bcf-a1f2-23ac34ec9775 .banner__box,
 #Banner-template--19349027422485__35dddd9f-4fb9-4bcf-a1f2-23ac34ec9775 .banner__box,
-#Banner-template--18009188073749__067ed4d2-27f1-42e7-8209-848a9cd706f7 .banner__box {
+#Banner-template--19349027160341__067ed4d2-27f1-42e7-8209-848a9cd706f7 .banner__box {
   background: none;
 } 
 
 #Banner-template--19285229142293__35dddd9f-4fb9-4bcf-a1f2-23ac34ec9775 .banner__media,
 #Banner-template--19349027422485__35dddd9f-4fb9-4bcf-a1f2-23ac34ec9775 .banner__media,
-#Banner-template--18009188073749__067ed4d2-27f1-42e7-8209-848a9cd706f7 .banner__media {
+#Banner-template--19349027160341__067ed4d2-27f1-42e7-8209-848a9cd706f7 .banner__media {
   background-color: initial;
 }
 
@@ -581,14 +583,14 @@ h5,
 @media screen and (min-width: 750px) {
   #Banner-template--19285229142293__35dddd9f-4fb9-4bcf-a1f2-23ac34ec9775 .banner__media img,
   #Banner-template--19349027422485__35dddd9f-4fb9-4bcf-a1f2-23ac34ec9775 .banner__media img,
-  #Banner-template--18009188073749__067ed4d2-27f1-42e7-8209-848a9cd706f7 .banner__media img {
+  #Banner-template--19349027160341__067ed4d2-27f1-42e7-8209-848a9cd706f7 .banner__media img {
     padding: 0 5rem;
   }
 }
 
 #Banner-template--19285229142293__35dddd9f-4fb9-4bcf-a1f2-23ac34ec9775.banner:after,
 #Banner-template--19349027422485__35dddd9f-4fb9-4bcf-a1f2-23ac34ec9775.banner:after,
-#Banner-template--18009188073749__067ed4d2-27f1-42e7-8209-848a9cd706f7.banner:after {
+#Banner-template--19349027160341__067ed4d2-27f1-42e7-8209-848a9cd706f7.banner:after {
   left: 5rem;
   right: 5rem;
   width: calc(100% - 10rem);
@@ -597,7 +599,7 @@ h5,
 @media screen and (max-width: 749px) {
   #Banner-template--19285229142293__35dddd9f-4fb9-4bcf-a1f2-23ac34ec9775.banner:after,
   #Banner-template--19349027422485__35dddd9f-4fb9-4bcf-a1f2-23ac34ec9775.banner:after,
-  #Banner-template--18009188073749__067ed4d2-27f1-42e7-8209-848a9cd706f7.banner:after {
+  #Banner-template--19349027160341__067ed4d2-27f1-42e7-8209-848a9cd706f7.banner:after {
     left: 0;
     right: 0;
     width: 100%;
@@ -825,4 +827,21 @@ h5,
     display: none !important;
   }
 }
+
+/*CART*/
+
+cart-remove-button .button {
+  color: rgb(0, 0, 255);
+}
+
+/*Hero Banner Colors*/
+
+.banner--desktop-transparent .banner__box {
+  color: white;
+  --color-foreground: 255, 255, 255;
+  --color-button: 255, 255, 255;
+  --color-button-text: 0, 0, 0;
+}
+
+
 
